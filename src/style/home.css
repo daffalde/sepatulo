@@ -1,0 +1,145 @@
+.h-hero {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url("/home1.jpg");
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.h-button1 {
+  height: 50px;
+  padding: 0 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: transparent;
+  background-color: var(--white);
+  cursor: pointer;
+}
+.h-button1:hover {
+  background-color: #c8c9cf;
+}
+
+/*  */
+.h-selling {
+  width: 100%;
+  height: fit-content;
+  padding: 50px 0;
+}
+.h-s-content {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.h-s-c-in {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.h-s-c-i-list:hover {
+  text-decoration: underline;
+}
+.h-s-c-i-list img {
+  width: 100%;
+  aspect-ratio: 8/9;
+  object-fit: cover;
+  object-position: center;
+}
+.h-s-c-in2 {
+  width: 100%;
+  height: 980px;
+  background-image: url("/home2.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+}
+/*  */
+.h-benefit {
+  width: 100%;
+  height: fit-content;
+  padding: 50px 0;
+  text-align: center;
+}
+.h-b-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.h-b-c-list {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: default;
+}
+/*  */
+.h-about {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.h-a-menu1 {
+  width: 100%;
+  background-image: url("/home3.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
+}
+.h-a-menu2 {
+  width: 100%;
+}
+.h-button2 {
+  width: 130px;
+  height: 50px;
+  border: 1px solid var(--black);
+  background-color: transparent;
+  font-size: 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.h-button2:hover {
+  background-color: var(--black);
+  color: var(--white);
+  transition: 0.5s;
+}
+/*  */
+.h-brand {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+.h-b-content {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.h-b-content img {
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+.h-b-content img:hover {
+  filter: grayscale(0%);
+  transition: 0.5s;
+}

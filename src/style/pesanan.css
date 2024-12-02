@@ -1,0 +1,210 @@
+.pesanan {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  height: fit-content;
+}
+.p-table {
+  border: transparent;
+}
+.p-table thead tr {
+  border-radius: 10px;
+  border: 3px solid rgb(17, 17, 17, 0.2);
+}
+.p-table th {
+  background-color: white;
+  color: var(--black);
+}
+.p-table th:first-child {
+  border-radius: 10px 0 0 0px;
+}
+.p-table th:last-child {
+  border-radius: 0 10px 0px 0;
+}
+/* ___________ */
+.p-table tbody tr {
+  border-spacing: 10px;
+}
+
+/* _____________________________ */
+.p-head,
+.p-body {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid var(--black-low);
+  margin: 10px 0;
+}
+.p-head p,
+.p-body p {
+  display: block;
+  width: 14%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.p-body {
+  height: 80px;
+  margin: 5px 0;
+  cursor: default;
+  transition: 0.5s;
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+.p-body:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  z-index: 1;
+}
+.p-body img {
+  width: 65px;
+  aspect-ratio: 1/1;
+}
+.p-body button {
+  font-size: 16px;
+  background-color: transparent;
+  border: transparent;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  position: relative;
+}
+.p-body button:hover {
+  color: #e9b176;
+}
+.status {
+  color: red;
+}
+.status-ok {
+  color: green;
+}
+
+.p-detail {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  display: grid;
+  z-index: 2;
+}
+.p-d-content {
+  width: 450px;
+  height: fit-content;
+  background-color: var(--white);
+  place-self: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  z-index: 10;
+}
+.p-d-c-l-item {
+  width: 100%;
+  height: fit-content;
+  padding: 5px;
+  position: relative;
+}
+.p-d-c-l-item:hover {
+  background-color: white;
+}
+.p-d-c-l-item span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.p-d-c-l-item img {
+  width: 100px;
+}
+.waduh {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  background-color: #111111;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.waduh:hover {
+  background-color: rgb(80, 80, 80);
+}
+.entahlah {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.entahlah button {
+  margin-right: 10px;
+  height: 45px;
+  background-color: transparent;
+  border: transparent;
+  color: var(--black-low);
+}
+.entahlah button:hover {
+  color: var(--black);
+}
+
+.lacak {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgb(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
+.lacak-content {
+  width: 50%;
+  height: 90vh;
+  background-color: var(--white);
+  place-self: center;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* tracking */
+.l-c-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--black-low);
+  padding: 3px;
+}
+.l-c-body {
+  width: 100%;
+  height: 65vh;
+  overflow: auto;
+}
+.l-c-track {
+  padding-left: 20px;
+  display: flex;
+  color: var(--black);
+  filter: opacity(30%);
+}
+.l-c-track:first-child {
+  filter: opacity(100%);
+}
+.l-c-t-visual {
+  width: 5px;
+  height: 90px;
+  right: 10px;
+  position: relative;
+  background-color: #111111;
+}
+.l-c-t-visual2 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  right: 22px;
+  background-color: #111111;
+  border-radius: 50%;
+}

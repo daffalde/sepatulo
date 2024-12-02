@@ -1,0 +1,111 @@
+.logo {
+  margin: 30px 0;
+  position: absolute;
+  cursor: pointer;
+}
+.auth {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.a-content {
+  width: 100%;
+  max-width: 400px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+form,
+span {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  display: flex;
+}
+
+.input {
+  width: 100%;
+  height: 50px;
+  border: 2px solid var(--black-low);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+label {
+  display: flex;
+  gap: 20px;
+}
+.auth-button {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 16px;
+  cursor: pointer;
+  border: transparent;
+}
+.auth-button:hover {
+  background-color: rgb(17, 17, 17, 0.8);
+}
+.auth-button:active {
+  background-color: rgb(17, 17, 17, 0.6);
+}
+.oauth-button {
+  width: 100%;
+  height: 50px;
+  border: 2px solid var(--black-low);
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.oauth-button:hover {
+  background-color: #dcdcdc;
+}
+.oauth-button:active {
+  background-color: var(--black-low);
+}
+a {
+  color: var(--black);
+  font-weight: 800;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.confirm {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  background-color: var(--black);
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  transition: 0.5s;
+  text-align: center;
+  z-index: 3;
+}
+.confirm-true {
+  top: 50px;
+  transition: 0.5s;
+}
+.forgotpass:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

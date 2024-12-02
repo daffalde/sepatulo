@@ -1,0 +1,46 @@
+.Footer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.f-content {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+  align-items: start;
+  line-height: 25px;
+  flex-wrap: wrap;
+}
+.f-c-menu ul li {
+  list-style: none;
+}
+.f-c-menu ul li a {
+  font-size: 16px;
+  font-weight: 500;
+}
+.f-c-menu input {
+  height: 40px;
+  width: 250px;
+  font-size: 16px;
+  padding-left: 10px;
+  border: 1px solid var(--black-low);
+}
+.f-c-menu button {
+  height: 40px;
+  font-size: 16px;
+  color: var(--white);
+  width: 100%;
+  background-color: var(--black);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.f-c-menu button:hover {
+  background-color: #3b3b3b;
+}
