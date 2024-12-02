@@ -112,6 +112,7 @@ function App() {
           <Route path="/pesanan" Component={Pesanan} />
           <Route path="/midtrans" Component={Midtrans} />
           <Route path="/otp" Component={Otp} />
+          <Route path="/dashboard" Component={Dashboard} />
         </Routes>
       </BrowserRouter>
     </>
