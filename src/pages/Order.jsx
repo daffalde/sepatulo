@@ -164,7 +164,7 @@ export default function Order() {
           }
         );
         const resp = await axios.post(
-          "/api/snap/v1/transactions",
+          "/app/snap/v1/transactions",
           {
             transaction_details: {
               order_id: resp4.$id,
