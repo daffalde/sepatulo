@@ -164,7 +164,7 @@ export default function Order() {
           }
         );
         const resp = await axios.post(
-          "/app/snap/v1/transactions",
+          "https://app.sandbox.midtrans.com//snap/v1/transactions",
           {
             transaction_details: {
               order_id: resp4.$id,
