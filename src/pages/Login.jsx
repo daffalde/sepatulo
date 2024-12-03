@@ -71,7 +71,7 @@ export default function Login() {
     try {
       await account.createRecovery(
         email,
-        "http://localhost:5173/resetpassword"
+        "https://sepatulo.vercel.app/resetpassword"
       );
       setEmailsend(true);
     } catch (e) {
@@ -93,8 +93,8 @@ export default function Login() {
     try {
       await account.createOAuth2Session(
         OAuthProvider.Google,
-        "http://localhost:5173",
-        "http://localhost:5173/login",
+        "https://sepatulo.vercel.app/",
+        "https://sepatulo.vercel.app/login",
         ["profile"]
       );
     } catch (e) {
