@@ -97,7 +97,7 @@ export default function Home() {
         <div className="navbar-in"></div>
         <div className="h-hero">
           <h1 style={{ width: "80%" }}>
-            Jelajahi Sepatu Lokal Indonesia Gaya, Nyaman, dan Berkualitas!
+            Jelajahi Sepatu Lokal Indonesia Gaya, Nyaman, dan Berkualitas
           </h1>
           <br />
           <button className="h-button1" onClick={() => nav("/store")}>
