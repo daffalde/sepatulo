@@ -167,19 +167,20 @@ export default function Order() {
           "/api/snap/v1/transactions",
           {
             transaction_details: {
-              order_id: resp4.$id,
-              gross_amount: subtotal + dprice,
+              order_id: "iabaduwbdaiwd",
+              gross_amount: 123123,
             },
             credit_card: {
               secure: true,
             },
             customer_details: {
-              name: resp2.nama_user,
+              name: "halo",
             },
           },
           {
             headers: {
               Authorization: `Basic ${btoa(import.meta.env.VITE_MIDTRANS)}`,
+              "Content-Type": "application/json",
             },
           }
         );
