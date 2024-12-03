@@ -1,21 +1,20 @@
 {
+  "headers": [
+    {
+      "for": "/api/*",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://sepatulo.vercel.app"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" },
     {
       "source": "/api/:path*",
-      "destination": "https://api.sandbox.midtrans.com/:path*"
-    },
-    {
-      "source": "/api/:path*/",
-      "destination": "https://api.sandbox.midtrans.com/:path*/"
-    },
-    {
-      "source": "/app/:path*",
       "destination": "https://app.sandbox.midtrans.com/:path*"
-    },
-    {
-      "source": "/app/:path*/",
-      "destination": "https://app.sandbox.midtrans.com/:path*/"
     }
   ]
 }
