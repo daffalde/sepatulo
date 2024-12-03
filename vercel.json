@@ -1,12 +1,13 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/:path*",
-      "dest": "https://app.sandbox.midtrans.com/:path*",
-      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-      "headers": {
-        "Access-Control-Allow-Origin": "*"
-      }
-    }
+      "source": "/app/(.*)",
+      "destination": "https://app.sandbox.midtrans.com/$1"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "https://api.sandbox.midtrans.com/$1"
+    },
+    { "source": "/(.*)", "destination": "/" }
   ]
 }

@@ -167,8 +167,8 @@ export default function Order() {
           "/api/snap/v1/transactions",
           {
             transaction_details: {
-              order_id: "iabaduwbdaiwd",
-              gross_amount: 123123,
+              order_id: resp4.$id,
+              gross_amount: resp4.total,
             },
             credit_card: {
               secure: true,
