@@ -2,12 +2,20 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" },
     {
-      "source": "/api/(.*)",
-      "destination": "https://api.sandbox.midtrans.com/"
+      "source": "/api/:path*",
+      "destination": "https://api.sandbox.midtrans.com/:path*"
     },
     {
-      "source": "/app/(.*)",
-      "destination": "https://app.sandbox.midtrans.com/"
+      "source": "/api/:path*/",
+      "destination": "https://api.sandbox.midtrans.com/:path*/"
+    },
+    {
+      "source": "/app/:path*",
+      "destination": "https://app.sandbox.midtrans.com/:path*"
+    },
+    {
+      "source": "/app/:path*/",
+      "destination": "https://app.sandbox.midtrans.com/:path*/"
     }
   ]
 }
